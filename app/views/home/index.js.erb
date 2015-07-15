@@ -1,0 +1,5 @@
+$("#food").html("<%= j render('foods/food') %>");
+$('.pagination a').click(function () {
+  $.getScript(this.href);
+  return false;
+});

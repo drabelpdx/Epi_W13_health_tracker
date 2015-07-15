@@ -1,0 +1,21 @@
+
+<% if user_signed_in? %>
+  <div class="row">
+    <div class="col-md-6">
+      <p>calories consumed</p>
+      <%= link_to "Enter Food", new_food_path, id: "enter-food-link", remote: true %>
+      <div id="food-form"></div>
+      <div id="food">
+      <%= render "foods/food" %>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <p>calories burns</p>
+      <p> Exercise  -- Cal#</p>
+      <p> Exercise List</p>
+    </div>
+
+  </div>
+<% else %>
+  Please log in!
+<% end %>

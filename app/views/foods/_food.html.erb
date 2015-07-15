@@ -1,0 +1,14 @@
+<table class="table">
+  <thead>
+    <%= render "foods/food_headers" %>
+  </thead>
+  <tbody>
+    <% @foods.each do |food| %>
+    <tr>
+      <td><%= food.food %></td>
+      <td><%= food.calories %></td>
+    </tr>
+    <% end %>
+    </tbody>
+</table>
+  <%= will_paginate(@foods) %>
