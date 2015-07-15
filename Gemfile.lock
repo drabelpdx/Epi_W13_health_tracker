@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/zpaulovics/datetimepicker-rails.git
+  revision: 36d21cec5da7f5b214925804f60e63c61c747023
+  branch: master
+  specs:
+    datetimepicker-rails (4.7.16)
+      momentjs-rails (>= 2.9.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -238,6 +246,7 @@ DEPENDENCIES
   capybara
   coffee-rails
   database_cleaner
+  datetimepicker-rails!
   devise
   factory_girl_rails
   jquery-rails

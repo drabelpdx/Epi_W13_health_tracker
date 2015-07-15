@@ -9,9 +9,13 @@ class User < ActiveRecord::Base
 
   def search_foods(search_param)
     if search_param
-      foods.where('food LIKE ?', "%#{search_param}%")
+      # foods.where('food LIKE ?', "%#{search_param}%")
+      meals.where()
+      # meals.select do |meal|
+      #   meal.food.food.include?(search_param)
+      # end
     else
-      foods
+      meals
     end
   end
 end
