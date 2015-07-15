@@ -1,4 +1,5 @@
-$("#food").html("<%= j render('foods/food') %>");
+$("#foods").html("<%= j render('foods/food') %>");
+$("#food-sorting-options").html("<%= j render('foods/food_sorting_options') %>");
 $('.pagination a').click(function () {
   $.getScript(this.href);
   return false;

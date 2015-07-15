@@ -6,4 +6,12 @@ class User < ActiveRecord::Base
 
   has_many :meals
   has_many :foods, through: :meals
+
+  def search_foods(search_param)
+    if search_param
+      foods.where('food LIKE ?', "%#{search_param}%")
+    else
+      foods
+    end
+  end
 end

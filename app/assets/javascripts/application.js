@@ -22,4 +22,8 @@ $(function () {
     $.getScript(this.href);
     return false;
   });
+
+  $("#search").keyup(function() {
+    $("#search_form").submit();
+  });
 });

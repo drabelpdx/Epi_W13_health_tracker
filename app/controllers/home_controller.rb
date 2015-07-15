@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @foods = current_user.foods.order(sort + " " + direction).paginate(:per_page => 5, :page => params[:page])
+    # binding.pry
+    @foods = current_user.search_foods(params[:search]).order(sort + " " + direction).paginate(:per_page => 5, :page => params[:page])
     respond_to do |format|
       format.html
       format.js

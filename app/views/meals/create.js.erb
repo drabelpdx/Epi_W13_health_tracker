@@ -1,4 +1,4 @@
-$("#foods").append("<tr>" +
-                    "<td><%= @food.food %></td>" +
-                    "<td><%= @food.calories %></td>" +
-                  "</tr>");
+$("#foods table tbody").prepend("<tr class='success'>" +
+                                "<td><%= @food.food %></td>" +
+                                "<td><%= @food.calories %></td>" +
+                              "</tr>");
